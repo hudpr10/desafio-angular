@@ -1,0 +1,48 @@
+@import '../../color-variables.scss';
+
+.card {
+    display: flex;
+    color: $white;
+    font-family: "Inter", sans-serif;
+    width: 400px;
+    gap: 16px;
+    border: 1px solid $white;
+    border-radius: 8px;
+    padding: 8px 12px;
+
+    img {
+        height: 200px;
+    }
+
+    .texts {
+        display: flex;
+        flex-direction: column;
+        padding: 8px 0;
+
+        span {
+            margin: 8px 0;
+        }
+    }
+}
+
+@media (max-width: 830px) {
+    .card {
+        width: 300px;
+
+        img {
+            height: 150px;
+        }
+
+        h3 {
+            font-size: 1rem;
+        }
+
+        span {
+            font-size: 0.8rem;
+        }
+
+        p {
+            font-size: 0.8rem;
+        }
+    }
+}

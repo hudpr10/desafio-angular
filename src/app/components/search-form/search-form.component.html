@@ -1,0 +1,15 @@
+<div class="form-container">
+    <div class="form">
+        <input type="text" placeholder="Nome" [formControl]="name">
+        <select [formControl]="block">
+            <option value="">Bloco</option>
+            <option value="amonkhet">Amonkhet</option>
+            <option value="ixalan">Ixalan</option>
+            <option value="zendikar">Zendikar</option>
+            <option value="ravnica">Ravnica</option>
+            <option value="onslaught">Onslaught</option>
+        </select>
+        <button (click)="send()">Buscar</button>
+    </div>
+    <span class="error">{{ erro }}</span>
+</div>

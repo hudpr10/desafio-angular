@@ -1,0 +1,79 @@
+@import '../../color-variables.scss';
+
+main {
+    background-color: $black;
+    padding: 80px 72px 80px 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    min-height: 100vh;
+    max-width: 100%;
+
+    .error {
+        margin-top: 8px;
+        width: 100%;
+        font-family: "Inter", sans-serif;
+        color: $error;
+    }
+
+    .form-collection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        width: 832px;
+        color: $white;
+        font-family: "Inter", sans-serif;
+        margin-bottom: 16px;
+    }
+    
+    .collection-container {
+        margin-top: 16px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 32px;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 32px;
+    }
+
+    .loading-gif {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 990px) {
+    main {
+        .collection-container {
+            grid-template-columns: auto auto;
+        } 
+    }
+}
+
+@media (max-width: 830px) {
+    main {
+        padding: 40px 16px;
+
+        h1 {
+            width: 300px;
+            font-size: 1.4rem;
+        }
+
+        .collection-container {
+            grid-template-columns: auto;
+        }
+
+        .card-container {
+            grid-template-columns: auto;
+        }
+    }
+}

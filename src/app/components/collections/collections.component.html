@@ -1,0 +1,11 @@
+<div class="card" (click)="onClick()">
+    <div class="top-text">
+    <h2 class="title">{{ title }}</h2>
+    @if(block === "") {
+        <span class="sub-title">Não encontrado</span>
+    }@else {
+        <span class="sub-title">{{ block }}</span>
+    }
+    </div>
+    <span class="date">{{ date }}</span>
+</div>
